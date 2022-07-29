@@ -1,0 +1,157 @@
+:root{
+    --Scampi:hsl(234, 25%, 52%);
+    --Bunting:hsl(233,54%,16%);
+    --waterloo: hsl(232,10%,56%);
+    --Violet-Red: hsl(341,92%,62%);
+    --carnation-pink: hsl(341,100%,83%);
+    --white:#ffffff;
+    --roseGrad: linear-gradient(0deg, rgba(240,42,166,1) 0%, rgba(255,111,72,1) 100%);
+    --DodgerGrad: linear-gradient(180deg, rgba(72,81,255,1) 0%, rgba(240,42,166,1) 100%);
+
+
+}
+
+html{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(240,241,255,1) 100%);
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+
+    line-height: 1.2;
+     font-family: 'Plus Jakarta Sans', sans-serif;;
+     width: 100%;
+     /* margin: 1rem auto; */
+     
+    
+   
+}
+body > *{
+    margin-bottom: 0.9rem;
+    padding: 0rem 0.7rem;
+    
+}
+img{
+    max-width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+.btn{
+    padding: 0.9rem 1.5rem;
+    border-radius: 1.5rem;
+    border: 0;
+    display: inline-block;
+    font-family: 'Plus Jakarta Sans', sans-serif;;
+    font-size: 1.2rem;
+
+
+}
+
+.nav-btn{
+    background-color: var(--Bunting);
+}
+
+
+.hero-btn{
+    background: var(--roseGrad);
+    color: var(--white);
+   
+}
+
+.main-btn{
+    color: var(--Violet-Red);
+    background-color: transparent;
+}
+
+.footer-btn{
+    background: var(--DodgerGrad);
+    color: white;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item{
+    font-size: 1.5rem;
+    font-weight:700 ;
+    color: var(--Bunting);
+}
+
+.hero{
+    padding: 1rem 0.7rem;
+}
+
+.hero-header{
+    font-size: 2.3rem;
+    
+    color: var(--Bunting);
+}
+
+.hero-txt{
+
+    color: var(--waterloo);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: left;
+
+}
+
+
+.img-container{
+
+    margin-top: 1.5em;
+}
+
+.courses{
+    line-height: 1.7;
+}
+
+.courses-header{
+    color: white;
+    background: var(--roseGrad);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.main-btn{
+    padding: 0;
+    font-weight: 600;
+}
+.course-desc{
+    background: var(--white);
+    position: relative;
+    margin: 2.8rem 0;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.course-desc > p{
+    color: var(--waterloo);
+}
+
+.icons{
+    position: absolute;
+    top: -10%;
+}
+.footer{
+    background: var(--Bunting);
+    color: white;
+    margin: 0;
+    margin-top: 5rem;
+    padding: 2.4rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}
+.footer > span{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
