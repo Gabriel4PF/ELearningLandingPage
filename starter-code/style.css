@@ -24,7 +24,8 @@ body{
     line-height: 1.2;
      font-family: 'Plus Jakarta Sans', sans-serif;;
      width: 100%;
-     /* margin: 1rem auto; */
+     margin: 0;
+    
      
     
    
@@ -78,6 +79,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 1.5rem;
 }
 .nav-item{
     font-size: 1.5rem;
@@ -128,13 +130,16 @@ a{
     background: var(--white);
     position: relative;
     margin: 2.8rem 0;
-    padding: 1.3rem;
+    padding: 1rem;
     border-radius: 0.5rem;
 }
 
 .course-desc > p{
     color: var(--waterloo);
+  
+
 }
+
 
 .icons{
     position: absolute;
@@ -154,4 +159,152 @@ a{
 .footer > span{
     font-size: 1.7rem;
     font-weight: bold;
+}
+
+.tablet{
+
+    display: none;
+}
+
+.btn:hover{
+    opacity: 0.4;
+}
+.courses, .hero, nav{
+    width: min(95%, 80vw);
+    margin: 0 auto;
+}
+
+
+@media(min-width:700px) {
+
+    nav{
+        padding: 1.4rem;
+    }
+
+    .hero{
+
+        display: flex;
+        gap: 1.5rem;
+        padding:0 1.4rem;
+        margin-top: 1.5rem;
+        position: relative;
+    }
+
+    .hero-container{
+        margin-top: 10.5rem;
+        height: 50%;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .hero-container{
+        flex-grow: 2;
+    }
+    .img-container{
+
+transform: scale(1.5);
+position: relative;
+left: 10rem;
+
+        
+        
+    }
+    .tablet{
+       display: inline-block;
+       transform: scale(4rem);
+       
+       
+       
+       
+        
+    }
+    main{
+        margin-top: 3.5rem;
+    }
+
+    .courses{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      
+      
+    }
+    .courses, .hero, nav{
+        width: 80%;
+        max-width:950PX;
+        margin: 0 auto;
+    }
+
+    
+    .course-desc{
+        padding:min(1.4rem,1.7rem)  ;
+        display: flex;
+        flex-direction: column;
+        /* width: 400px; */
+        font-size: min(1rem, 2rem);
+
+    }
+
+    
+    .courses-header{
+        margin-Bottom:3rem;
+    }
+
+   
+    .course-desc > p{
+        height: 30%;
+        margin: 0;
+        margin-bottom: 2.5rem;
+    }
+    
+    .main-btn{
+        text-align: left;
+    }
+
+    .footer{
+        justify-content: space-between;
+    }
+    .footer > *{
+        margin:  0 1rem;
+    }
+
+
+
+}
+
+@media(min-width:1400px){
+
+    .courses{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2,400px);
+        gap: 1rem;
+        padding:   1.5rem;
+    }
+
+  main, .hero, nav {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+    
+    
+.course-desc{
+    padding:1.5rem 1rem
+}
+
+    .main-btn{
+        margin-bottom: 2.5rem;
+    }
+
+
+    .hero, nav{
+        width: 75%;
+    }
+    .courses{
+        width: 2000px
+    }
 }
